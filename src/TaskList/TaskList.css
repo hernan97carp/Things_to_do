@@ -12,21 +12,21 @@
 
 .task-list {
   list-style-type: none;
-  padding: 0;
-  margin: 2rem;
-  height: auto;
+  padding: 0px;
+  margin: 0rem 2rem 0 2rem;
+
 }
 
 .task-list li {
   border: 1px solid #e4e4e4;
-  background-color: #d6d5d5;
-  margin: 2rem;
+  background-color: #cac6c6;
+ margin-bottom: 2rem;
 }
 
 /* Aplicar overflow-wrap a elementos de texto dentro de los li */
 .task-list p {
   overflow-wrap: break-word; 
-  margin: 1rem;
+
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: black;/* Permite saltos de línea en palabras largas */
 }
@@ -45,4 +45,17 @@
 .buttonList {
   margin-left: 90%;
   margin-bottom: 10px;
+}
+
+.prioridad {
+  background-color: #1b92af;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  height: 40px;
+
+}
+.prioridadText{
+  margin: 1rem;
 }

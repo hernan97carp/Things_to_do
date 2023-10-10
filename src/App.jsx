@@ -3,10 +3,17 @@ import { useState } from "react";
 import TaskList from "./TaskList/TaskList";
 import TaskForm from "./TaskForm/TaskForm";
 function App() {
-  const [tasks, setTasks] = useState([]);
-  const handleAddTask = (newTask) => {
-    setTasks([...tasks, newTask]);
+  const [tasks, setTasks] = useState([
+    { text: "Tarea 1", priority: "Alta" },
+    { text: "Tarea 2", priority: "Media" },
+    // ...
+  ]);
+
+  const handleAddTask = (newTask, newPriority) => {
+    const newTaskObj = { text: newTask, priority: newPriority }; // Utiliza la prioridad proporcionada por el usuario
+    setTasks([...tasks, newTaskObj]);
   };
+
   const handleDeleteTask = (index) => {
     const newTask = [...tasks];
     newTask.splice(index, 1);
