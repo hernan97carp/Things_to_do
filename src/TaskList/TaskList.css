@@ -1,0 +1,48 @@
+
+.task {
+  width: 80%;
+  height: auto;
+  box-sizing: content-box;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem;
+  height: auto;
+}
+
+.task-list li {
+  border: 1px solid #e4e4e4;
+  background-color: #d6d5d5;
+  margin: 2rem;
+}
+
+/* Aplicar overflow-wrap a elementos de texto dentro de los li */
+.task-list p {
+  overflow-wrap: break-word; 
+  margin: 1rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;/* Permite saltos de línea en palabras largas */
+}
+.task-list li button {
+  background-color: #a54949;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.task-list li button:hover {
+  background-color: #ff4444;
+}
+.buttonList {
+  margin-left: 90%;
+  margin-bottom: 10px;
+}
